@@ -25,9 +25,7 @@ h1 {
     padding-right: 10%;
     text-align: left;
     text-transform: uppercase;
-    position: relative;
-    top: 50%;
-    transform: translateY(25%);
+
 }
 
 h2 {
@@ -57,20 +55,21 @@ p {
     font-size: 1em;
     padding-left: 10%;
     padding-right: 10%;
-    padding-top: 1em;
+    padding-bottom: 1em;
     text-align: justify;
 }
 
 blockquote {
     padding-top: 1em;
     padding-bottom: 1em;
-    font-size: 1.6em;
+    font-size: 2em;
     font-weight: 600;
-    text-align: center;
+    text-align: left;
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 1em;
     padding-bottom: 1em;
+  color: #ffffff;
 }
 
 cite {
@@ -81,6 +80,16 @@ cite {
     padding-right: 10%;
     padding-top: 1em;
     padding-bottom: 1em;
+      color: #ffffff;
+}
+
+.blockquote_holder{padding-top: 3em;
+padding-bottom: 5em;
+margin-top: 3em;
+margin-bottom: 3em;
+background: #222222;
+margin-left: 10%;
+margin-right: 10%;
 }
 
 aside {
@@ -102,20 +111,24 @@ aside {
     margin-right: 1em;
     margin-top: 10px
 }
+/* NOTE: map */
 
+#map{width:80%;height:300px;display:block;margin-left:auto;margin-right:auto}
 
 /* NOTE: tables */
 
 table {
     border-collapse: collapse;
     margin-left: 10%;
+    margin-right: 10%;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
 table, tr, td {
     border-bottom: 4px solid #ffce00;
-    padding: 30px;
+    padding: 20px;
+
 }
 
 
@@ -128,10 +141,10 @@ table, tr, td {
     padding-top: 2.5vh;
     position: fixed;
     width: 100%;
-    background: #ffce00;
+    background: rgba(255, 255, 255, 0.9);
     z-index: 9999;
-    box-shadow: 1px 0px 20px 0px #000000;
     top: 0px;
+     box-shadow: 1px 0px 5px 2px rgba(0,0,0,0.4)
 }
 
 .tidynav>a {
@@ -146,18 +159,17 @@ table, tr, td {
 
 img {
     width: 80%;
-    box-shadow: 15px 15px 5px 0px rgba(0, 0, 0, 0.1);
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 1em;
 }
 
 
 /* NOTE: para sections */
 
 header {
-    margin-top: 70px;
+    margin-top: 0;
+    padding-top: 70px;
     position: fixed;
     z-index: -999999;
     height: 110vh;
@@ -167,6 +179,8 @@ header {
     background-size: cover;
     background-position: center;
 }
+
+
 
 .headerv2 {
     height: 110vh;
@@ -178,9 +192,15 @@ header {
 
 /* NOTE: header headings */
 
+.headings {
+  padding-top: 1em;
+}
+
 .headings>h1>span {
     color: #ffce00;
 }
+
+.header-side{font-size: 0.5em;}
 
 
 /* NOTE: main */
@@ -192,8 +212,8 @@ header {
 }
 
 .child {
-    padding-top: 2.5em;
-    padding-bottom: 2.5em;
+    padding-top: 2em;
+  padding-bottom: 2em;
 }
 
 
@@ -206,15 +226,49 @@ header {
 }
 
 .child2 {
-    background: #ffffff;
+    padding-top: 3em;
+  padding-bottom: 3em;
 }
+
+/* NOTE: pauses */
+
+.pause{height: 600px;
+  background: url(../images/41_Takahe_17-1600x1064.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+background-attachment: fixed;
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 3em;}
+
+.pause2{height: 600px;
+  background: url(../images/moa.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+background-attachment: fixed;
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 3em;}
+
+.pause3{height: 600px;
+  background: url(../images/bent-billiard-pipe.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+background-attachment: fixed;
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 3em;}
+
+/* NOTE: map */
+
+#map {width: 80%;
+display: block;
+margin-left: auto;
+margin-right: auto;}
 
 
 /* NOTE: text-sections */
 
-.headings {
-    text-align: center;
-}
 
 
 /* NOTE: footer */
@@ -223,4 +277,49 @@ footer {
     height: auto;
     padding-bottom: 2em;
     background: #ffffff;
+}
+
+
+/* NOTE:  */
+
+@media only screen and (max-width: 800px) {
+
+  h1{font-size: 3em;}
+
+  .header-box{height: 17px;
+  width: 17px;
+  margin-left: 10%;
+  margin-right: 1em;
+  margin-top: 5px;
+}
+
+  h2{font-size: 2em;}
+
+  blockquote{font-size: 1.3em;
+  }
+
+  cite{font-size: 1em;}
+
+.pause{margin-left: 0;
+margin-right: 0;
+background-attachment: scroll;}
+
+.pause2{margin-left: 0;
+margin-right: 0;
+background-attachment: scroll;}
+
+.pause3{margin-left: 0;
+margin-right: 0;
+background-attachment: scroll;}
+
+
+#map{width: 100%;}
+
+table, tr, td {
+  font-size: 0.9em;
+    border-bottom: 4px solid #ffce00;
+    padding: 10px;
+
+}
+
 }

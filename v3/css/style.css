@@ -28,12 +28,15 @@ h1 {
 
 }
 
+.sub-header-pad{
+  padding-top: 2em;
+  padding-bottom: 4em;}
+
 h2 {
     text-align: left;
     padding-left: 10%;
     padding-right: 10%;
     font-size: 2.827em;
-    padding-bottom: 1em;
     text-transform: uppercase;
 }
 
@@ -41,8 +44,8 @@ h3 {
     text-align: left;
     padding-left: 10%;
     padding-right: 10%;
-    font-size: 1.999em;
-    font-style: oblique;
+    font-size: 1.7em;
+    padding-top: 1em;
     padding-bottom: 1em;
 }
 
@@ -79,7 +82,7 @@ cite {
     padding-right: 10%;
     padding-top: 1em;
     padding-bottom: 1em;
-      color: #ffffff;
+      color: #ffce00;;
 }
 
 .blockquote_holder{padding-top: 3em;
@@ -97,6 +100,7 @@ aside {
     font-family: sans-serif;
     text-align: left;
     padding-left: 10%;
+    padding-right: 10%;
 }
 
 a{color: #000000;}
@@ -122,8 +126,6 @@ table {
     border-collapse: collapse;
     margin-left: 10%;
     margin-right: 10%;
-    margin-top: 1em;
-    margin-bottom: 1em;
 }
 
 table, tr, td {
@@ -216,7 +218,7 @@ header {
 /* NOTE: header headings */
 
 .headings {
-  padding-top: 1em;
+  padding-top: 4em;
 }
 
 .headings>h1>span {
@@ -234,13 +236,38 @@ header {
     background: #ffffff;
 }
 
+/* NOTE: JAVA */
+
 .child {
     padding-top: 2em;
   padding-bottom: 2em;
+  opacity: 0;
+}
+
+.child-show {
+    padding-top: 2em;
+  padding-bottom: 2em;
+animation-name: appear;
+animation-fill-mode: forwards;
+animation-duration: 2s;
+}
+
+/* NOTE: java appear */
+
+@keyframes appear {
+
+
+  100%{opacity: 1.0}
+
 }
 
 
-/* NOTE: child2 is for images */
+
+.child2{
+padding-bottom: 4em;
+padding-top: 2em;}
+
+
 
 .container2 {
     display: flex;
@@ -258,7 +285,7 @@ header {
 background-attachment: fixed;
 margin-left: 10%;
 margin-right: 10%;
-margin-bottom: 3em;}
+margin-top: 2em;}
 
 .pause2{height: 600px;
   background: url(../images/moa.jpg) no-repeat;
@@ -275,8 +302,7 @@ margin-bottom: 3em;}
   background-position: center;
 background-attachment: fixed;
 margin-left: 10%;
-margin-right: 10%;
-margin-bottom: 3em;}
+margin-right: 10%;}
 
 /* NOTE: map */
 
@@ -366,7 +392,7 @@ padding-bottom: 1em}
 
 @media only screen and (max-width: 350px) {
 
-.navlink {font-size: 0.4em;}
+.navlink {font-size: 0.3em;}
 
   .header-box{height: 10px;
   width: 10px;

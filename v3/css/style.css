@@ -30,7 +30,7 @@ h1 {
 
 .sub-header-pad{
   padding-top: 2em;
-  padding-bottom: 4em;}
+  padding-bottom: 2em;}
 
 h2 {
     text-align: left;
@@ -46,7 +46,6 @@ h3 {
     padding-right: 10%;
     font-size: 1.7em;
     padding-top: 1em;
-    padding-bottom: 1em;
 }
 
 h4 {
@@ -123,6 +122,7 @@ a{color: #000000;}
 /* NOTE: tables */
 
 table {
+margin-top: 1em;
     border-collapse: collapse;
     margin-left: 10%;
     margin-right: 10%;
@@ -221,6 +221,10 @@ header {
   padding-top: 4em;
 }
 
+.headings-show {
+  padding-top: 4em;
+}
+
 .headings>h1>span {
     color: #ffce00;
 }
@@ -294,7 +298,7 @@ margin-top: 2em;}
 background-attachment: fixed;
 margin-left: 10%;
 margin-right: 10%;
-margin-bottom: 3em;}
+margin-bottom: 2em;}
 
 .pause3{height: 600px;
   background: url(../images/bent-billiard-pipe.jpg) no-repeat;
@@ -341,8 +345,11 @@ footer {
   margin-top: 5px;
 }
 
-  h2{font-size: 2em;
-    padding-bottom: 0.5em;}
+.sub-header-pad{
+  padding-top: 1em;
+  padding-bottom: 1em;}
+
+  h2{font-size: 2em;}
 
   blockquote{font-size: 1em;
   }
@@ -353,8 +360,7 @@ footer {
 
 .pause{margin-left: 0;
 margin-right: 0;
-background-attachment: scroll;
-margin-bottom: 1em;}
+background-attachment: scroll;}
 
 .pause2{margin-left: 0;
 margin-right: 0;

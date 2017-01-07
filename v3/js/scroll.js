@@ -10,6 +10,12 @@ $(window).scroll(function(){
 
     });
 
+    $('.headings').each(function(){
+
+      $('.headings').addClass('headings-show');
+
+    });
+
   }
 
 });
